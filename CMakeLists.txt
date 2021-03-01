@@ -42,11 +42,6 @@ if(CMAKE_C_COMPILER_ID MATCHES "Clang")
   set(CLANG 1)
 endif()
 
-if (MACOSX)
-   set(CMAKE_C_COMPILER /usr/bin/cc CACHE PATH "" FORCE)
-   set(CMAKE_CXX_COMPILER /usr/bin/c++ CACHE PATH "" FORCE)
-endif()
-
 # Global configuration
 
 set(C_CXX_FLAGS
