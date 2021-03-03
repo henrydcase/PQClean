@@ -253,10 +253,106 @@ set(
 define_kem_alg(kyber1024_clean
   PQCLEAN_KYBER1024_CLEAN "${SRC_CLEAN_KYBER1024}" "${INC_CLEAN_KYBER1024}")
 
+set(
+  SRC_CLEAN_SABER
+  src/kem/saber/saber/clean/cbd.c
+  src/kem/saber/saber/clean/kem.c
+  src/kem/saber/saber/clean/pack_unpack.c
+  src/kem/saber/saber/clean/poly.c
+  src/kem/saber/saber/clean/poly_mul.c
+  src/kem/saber/saber/clean/SABER_indcpa.c
+  src/kem/saber/saber/clean/verify.c)
+set(
+  INC_CLEAN_SABER
+  src/kem/saber/saber/clean)
+define_kem_alg(
+  saber_clean
+  PQCLEAN_SABER_CLEAN "${SRC_CLEAN_SABER}" "${INC_CLEAN_SABER}")
+
+set(
+  SRC_CLEAN_FIRESABER
+  src/kem/saber/firesaber/clean/cbd.c
+  src/kem/saber/firesaber/clean/kem.c
+  src/kem/saber/firesaber/clean/pack_unpack.c
+  src/kem/saber/firesaber/clean/poly.c
+  src/kem/saber/firesaber/clean/poly_mul.c
+  src/kem/saber/firesaber/clean/SABER_indcpa.c
+  src/kem/saber/firesaber/clean/verify.c)
+set(
+  INC_CLEAN_FIRESABER
+  src/kem/saber/firesaber/clean)
+define_kem_alg(
+  firesaber_clean
+  PQCLEAN_FIRESABER_CLEAN "${SRC_CLEAN_FIRESABER}" "${INC_CLEAN_FIRESABER}")
+
+set(
+  SRC_CLEAN_LIGHTSABER
+  src/kem/saber/lightsaber/clean/cbd.c
+  src/kem/saber/lightsaber/clean/kem.c
+  src/kem/saber/lightsaber/clean/pack_unpack.c
+  src/kem/saber/lightsaber/clean/poly.c
+  src/kem/saber/lightsaber/clean/poly_mul.c
+  src/kem/saber/lightsaber/clean/SABER_indcpa.c
+  src/kem/saber/lightsaber/clean/verify.c)
+set(
+  INC_CLEAN_LIGHTSABER
+  src/kem/saber/lightsaber/clean)
+define_kem_alg(
+  lightsaber_clean
+  PQCLEAN_LIGHTSABER_CLEAN "${SRC_CLEAN_LIGHTSABER}" "${INC_CLEAN_LIGHTSABER}")
+
 # AVX2 targets
 if(${ARCH} STREQUAL "ARCH_x86_64")
 
-set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -march=haswell")
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -march=native -mtune=native")
+
+set(
+  SRC_AVX2_SABER
+  src/kem/saber/saber/avx2/cbd.c
+  src/kem/saber/saber/avx2/kem.c
+  src/kem/saber/saber/avx2/pack_unpack.c
+  src/kem/saber/saber/avx2/poly.c
+  src/kem/saber/saber/avx2/poly_mul.c
+  src/kem/saber/saber/avx2/SABER_indcpa.c
+  src/kem/saber/saber/avx2/verify.c)
+set(
+  INC_AVX2_SABER
+  src/kem/saber/saber/avx2)
+define_kem_alg(
+  saber_avx2
+  PQCLEAN_SABER_AVX2 "${SRC_AVX2_SABER}" "${INC_AVX2_SABER}")
+
+set(
+  SRC_AVX2_FIRESABER
+  src/kem/saber/firesaber/avx2/cbd.c
+  src/kem/saber/firesaber/avx2/kem.c
+  src/kem/saber/firesaber/avx2/pack_unpack.c
+  src/kem/saber/firesaber/avx2/poly.c
+  src/kem/saber/firesaber/avx2/poly_mul.c
+  src/kem/saber/firesaber/avx2/SABER_indcpa.c
+  src/kem/saber/firesaber/avx2/verify.c)
+set(
+  INC_AVX2_FIRESABER
+  src/kem/saber/firesaber/avx2)
+define_kem_alg(
+  firesaber_avx2
+  PQCLEAN_FIRESABER_AVX2 "${SRC_AVX2_FIRESABER}" "${INC_AVX2_FIRESABER}")
+
+set(
+  SRC_AVX2_LIGHTSABER
+  src/kem/saber/lightsaber/avx2/cbd.c
+  src/kem/saber/lightsaber/avx2/kem.c
+  src/kem/saber/lightsaber/avx2/pack_unpack.c
+  src/kem/saber/lightsaber/avx2/poly.c
+  src/kem/saber/lightsaber/avx2/poly_mul.c
+  src/kem/saber/lightsaber/avx2/SABER_indcpa.c
+  src/kem/saber/lightsaber/avx2/verify.c)
+set(
+  INC_AVX2_LIGHTSABER
+  src/kem/saber/lightsaber/avx2)
+define_kem_alg(
+  lightsaber_avx2
+  PQCLEAN_LIGHTSABER_AVX2 "${SRC_AVX2_LIGHTSABER}" "${INC_AVX2_LIGHTSABER}")
 
 set(
   SRC_AVX2_DILITHIUM2
@@ -401,7 +497,6 @@ set(
 )
 define_kem_alg(kyber1024_avx2
   PQCLEAN_KYBER1024_AVX2 "${SRC_AVX2_KYBER1024}" "${INC_AVX2_KYBER1024}")
-
 endif()
 
 # The rest of the library
