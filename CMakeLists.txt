@@ -301,6 +301,42 @@ define_kem_alg(
   lightsaber_clean
   PQCLEAN_LIGHTSABER_CLEAN "${SRC_CLEAN_LIGHTSABER}" "${INC_CLEAN_LIGHTSABER}")
 
+set(
+  SRC_CLEAN_FALCON512
+  src/sign/falcon/falcon-512/clean/codec.c
+  src/sign/falcon/falcon-512/clean/common.c
+  src/sign/falcon/falcon-512/clean/fft.c
+  src/sign/falcon/falcon-512/clean/fpr.c
+  src/sign/falcon/falcon-512/clean/keygen.c
+  src/sign/falcon/falcon-512/clean/pqclean.c
+  src/sign/falcon/falcon-512/clean/rng.c
+  src/sign/falcon/falcon-512/clean/sign.c
+  src/sign/falcon/falcon-512/clean/vrfy.c)
+set(
+  INC_CLEAN_FALCON512
+  src/sign/falcon/falcon-512/clean)
+define_sig_alg(
+  falcon512_clean
+  PQCLEAN_FALCON512_CLEAN "${SRC_CLEAN_FALCON512}" "${INC_CLEAN_FALCON512}")
+
+set(
+  SRC_CLEAN_FALCON1024
+  src/sign/falcon/falcon-1024/clean/codec.c
+  src/sign/falcon/falcon-1024/clean/common.c
+  src/sign/falcon/falcon-1024/clean/fft.c
+  src/sign/falcon/falcon-1024/clean/fpr.c
+  src/sign/falcon/falcon-1024/clean/keygen.c
+  src/sign/falcon/falcon-1024/clean/pqclean.c
+  src/sign/falcon/falcon-1024/clean/rng.c
+  src/sign/falcon/falcon-1024/clean/sign.c
+  src/sign/falcon/falcon-1024/clean/vrfy.c)
+set(
+  INC_CLEAN_FALCON1024
+  src/sign/falcon/falcon-1024/clean)
+define_sig_alg(
+  falcon1024_clean
+  PQCLEAN_FALCON1024_CLEAN "${SRC_CLEAN_FALCON1024}" "${INC_CLEAN_FALCON1024}")
+
 # AVX2 targets
 if(${ARCH} STREQUAL "ARCH_x86_64")
 
@@ -505,6 +541,42 @@ set(SRC_COMMON_GENERIC
   src/common/sp800-185.c
   src/common/randombytes.c
 )
+
+set(
+  SRC_AVX2_FALCON512
+  src/sign/falcon/falcon-512/avx2/codec.c
+  src/sign/falcon/falcon-512/avx2/common.c
+  src/sign/falcon/falcon-512/avx2/fft.c
+  src/sign/falcon/falcon-512/avx2/fpr.c
+  src/sign/falcon/falcon-512/avx2/keygen.c
+  src/sign/falcon/falcon-512/avx2/pqclean.c
+  src/sign/falcon/falcon-512/avx2/rng.c
+  src/sign/falcon/falcon-512/avx2/sign.c
+  src/sign/falcon/falcon-512/avx2/vrfy.c)
+set(
+  INC_AVX2_FALCON512
+  src/sign/falcon/falcon-512/avx2)
+define_sig_alg(
+  falcon512_avx2
+  PQCLEAN_FALCON512_AVX2 "${SRC_AVX2_FALCON512}" "${INC_AVX2_FALCON512}")
+
+set(
+  SRC_AVX2_FALCON1024
+  src/sign/falcon/falcon-1024/avx2/codec.c
+  src/sign/falcon/falcon-1024/avx2/common.c
+  src/sign/falcon/falcon-1024/avx2/fft.c
+  src/sign/falcon/falcon-1024/avx2/fpr.c
+  src/sign/falcon/falcon-1024/avx2/keygen.c
+  src/sign/falcon/falcon-1024/avx2/pqclean.c
+  src/sign/falcon/falcon-1024/avx2/rng.c
+  src/sign/falcon/falcon-1024/avx2/sign.c
+  src/sign/falcon/falcon-1024/avx2/vrfy.c)
+set(
+  INC_AVX2_FALCON1024
+  src/sign/falcon/falcon-1024/avx2)
+define_sig_alg(
+  falcon1024_avx2
+  PQCLEAN_FALCON1024_AVX2 "${SRC_AVX2_FALCON1024}" "${INC_AVX2_FALCON1024}")
 
 if(${ARCH} STREQUAL "ARCH_x86_64")
 set(SRC_COMMON_AVX2
