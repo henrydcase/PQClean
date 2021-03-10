@@ -598,6 +598,198 @@ define_sig_alg(
   sphincs_sha256_256s_robust_clean
   PQCLEAN_SPHINCSSHA256256SROBUST_CLEAN "${SRC_CLEAN_SPHINCS_SHA256_256S_ROBUST}" "${INC_CLEAN_SPHINCS_SHA256_256S_ROBUST}")
 
+set(
+  SRC_CLEAN_SPHINCS_SHAKE256_128F_ROBUST
+  src/sign/sphincs/sphincs-shake256-128f-robust/clean/address.c
+  src/sign/sphincs/sphincs-shake256-128f-robust/clean/fors.c
+  src/sign/sphincs/sphincs-shake256-128f-robust/clean/hash_shake256.c
+  src/sign/sphincs/sphincs-shake256-128f-robust/clean/sign.c
+  src/sign/sphincs/sphincs-shake256-128f-robust/clean/thash_shake256_robust.c
+  src/sign/sphincs/sphincs-shake256-128f-robust/clean/utils.c
+  src/sign/sphincs/sphincs-shake256-128f-robust/clean/wots.c)
+set(
+  INC_CLEAN_SPHINCS_SHAKE256_128F_ROBUST
+  src/sign/sphincs/sphincs-shake256-128f-robust/clean)
+define_sig_alg(
+  sphincs_shake256_128f_robust_clean
+  PQCLEAN_SPHINCSSHAKE256128FROBUST_CLEAN "${SRC_CLEAN_SPHINCS_SHAKE256_128F_ROBUST}" "${INC_CLEAN_SPHINCS_SHAKE256_128F_ROBUST}")
+
+set(
+  SRC_CLEAN_SPHINCS_SHAKE256_192F_ROBUST
+  src/sign/sphincs/sphincs-shake256-192f-robust/clean/address.c
+  src/sign/sphincs/sphincs-shake256-192f-robust/clean/fors.c
+  src/sign/sphincs/sphincs-shake256-192f-robust/clean/hash_shake256.c
+  src/sign/sphincs/sphincs-shake256-192f-robust/clean/sign.c
+  src/sign/sphincs/sphincs-shake256-192f-robust/clean/thash_shake256_robust.c
+  src/sign/sphincs/sphincs-shake256-192f-robust/clean/utils.c
+  src/sign/sphincs/sphincs-shake256-192f-robust/clean/wots.c)
+set(
+  INC_CLEAN_SPHINCS_SHAKE256_192F_ROBUST
+  src/sign/sphincs/sphincs-shake256-192f-robust/clean)
+define_sig_alg(
+  sphincs_shake256_192f_robust_clean
+  PQCLEAN_SPHINCSSHAKE256192FROBUST_CLEAN "${SRC_CLEAN_SPHINCS_SHAKE256_192F_ROBUST}" "${INC_CLEAN_SPHINCS_SHAKE256_192F_ROBUST}")
+
+set(
+  SRC_CLEAN_SPHINCS_SHAKE256_256F_ROBUST
+  src/sign/sphincs/sphincs-shake256-256f-robust/clean/address.c
+  src/sign/sphincs/sphincs-shake256-256f-robust/clean/fors.c
+  src/sign/sphincs/sphincs-shake256-256f-robust/clean/hash_shake256.c
+  src/sign/sphincs/sphincs-shake256-256f-robust/clean/sign.c
+  src/sign/sphincs/sphincs-shake256-256f-robust/clean/thash_shake256_robust.c
+  src/sign/sphincs/sphincs-shake256-256f-robust/clean/utils.c
+  src/sign/sphincs/sphincs-shake256-256f-robust/clean/wots.c)
+set(
+  INC_CLEAN_SPHINCS_SHAKE256_256F_ROBUST
+  src/sign/sphincs/sphincs-shake256-256f-robust/clean)
+define_sig_alg(
+  sphincs_shake256_256f_robust_clean
+  PQCLEAN_SPHINCSSHAKE256256FROBUST_CLEAN "${SRC_CLEAN_SPHINCS_SHAKE256_256F_ROBUST}" "${INC_CLEAN_SPHINCS_SHAKE256_256F_ROBUST}")
+
+set(
+  SRC_CLEAN_SPHINCS_SHAKE256_128F_SIMPLE
+  src/sign/sphincs/sphincs-shake256-128f-simple/clean/address.c
+  src/sign/sphincs/sphincs-shake256-128f-simple/clean/fors.c
+  src/sign/sphincs/sphincs-shake256-128f-simple/clean/hash_shake256.c
+  src/sign/sphincs/sphincs-shake256-128f-simple/clean/sign.c
+  src/sign/sphincs/sphincs-shake256-128f-simple/clean/thash_shake256_simple.c
+  src/sign/sphincs/sphincs-shake256-128f-simple/clean/utils.c
+  src/sign/sphincs/sphincs-shake256-128f-simple/clean/wots.c)
+set(
+  INC_CLEAN_SPHINCS_SHAKE256_128F_SIMPLE
+  src/sign/sphincs/sphincs-shake256-128f-simple/clean)
+define_sig_alg(
+  sphincs_shake256_128f_simple_clean
+  PQCLEAN_SPHINCSSHAKE256128FSIMPLE_CLEAN "${SRC_CLEAN_SPHINCS_SHAKE256_128F_SIMPLE}" "${INC_CLEAN_SPHINCS_SHAKE256_128F_SIMPLE}")
+
+set(
+  SRC_CLEAN_SPHINCS_SHAKE256_192F_SIMPLE
+  src/sign/sphincs/sphincs-shake256-192f-simple/clean/address.c
+  src/sign/sphincs/sphincs-shake256-192f-simple/clean/fors.c
+  src/sign/sphincs/sphincs-shake256-192f-simple/clean/hash_shake256.c
+  src/sign/sphincs/sphincs-shake256-192f-simple/clean/sign.c
+  src/sign/sphincs/sphincs-shake256-192f-simple/clean/thash_shake256_simple.c
+  src/sign/sphincs/sphincs-shake256-192f-simple/clean/utils.c
+  src/sign/sphincs/sphincs-shake256-192f-simple/clean/wots.c)
+set(
+  INC_CLEAN_SPHINCS_SHAKE256_192F_SIMPLE
+  src/sign/sphincs/sphincs-shake256-192f-simple/clean)
+define_sig_alg(
+  sphincs_shake256_192f_simple_clean
+  PQCLEAN_SPHINCSSHAKE256192FSIMPLE_CLEAN "${SRC_CLEAN_SPHINCS_SHAKE256_192F_SIMPLE}" "${INC_CLEAN_SPHINCS_SHAKE256_192F_SIMPLE}")
+
+set(
+  SRC_CLEAN_SPHINCS_SHAKE256_256F_SIMPLE
+  src/sign/sphincs/sphincs-shake256-256f-simple/clean/address.c
+  src/sign/sphincs/sphincs-shake256-256f-simple/clean/fors.c
+  src/sign/sphincs/sphincs-shake256-256f-simple/clean/hash_shake256.c
+  src/sign/sphincs/sphincs-shake256-256f-simple/clean/sign.c
+  src/sign/sphincs/sphincs-shake256-256f-simple/clean/thash_shake256_simple.c
+  src/sign/sphincs/sphincs-shake256-256f-simple/clean/utils.c
+  src/sign/sphincs/sphincs-shake256-256f-simple/clean/wots.c)
+set(
+  INC_CLEAN_SPHINCS_SHAKE256_256F_SIMPLE
+  src/sign/sphincs/sphincs-shake256-256f-simple/clean)
+define_sig_alg(
+  sphincs_shake256_256f_simple_clean
+  PQCLEAN_SPHINCSSHAKE256256FSIMPLE_CLEAN "${SRC_CLEAN_SPHINCS_SHAKE256_256F_SIMPLE}" "${INC_CLEAN_SPHINCS_SHAKE256_256F_SIMPLE}")
+
+set(
+  SRC_CLEAN_SPHINCS_SHAKE256_128S_ROBUST
+  src/sign/sphincs/sphincs-shake256-128s-robust/clean/address.c
+  src/sign/sphincs/sphincs-shake256-128s-robust/clean/fors.c
+  src/sign/sphincs/sphincs-shake256-128s-robust/clean/hash_shake256.c
+  src/sign/sphincs/sphincs-shake256-128s-robust/clean/sign.c
+  src/sign/sphincs/sphincs-shake256-128s-robust/clean/thash_shake256_robust.c
+  src/sign/sphincs/sphincs-shake256-128s-robust/clean/utils.c
+  src/sign/sphincs/sphincs-shake256-128s-robust/clean/wots.c)
+set(
+  INC_CLEAN_SPHINCS_SHAKE256_128S_ROBUST
+  src/sign/sphincs/sphincs-shake256-128s-robust/clean)
+define_sig_alg(
+  sphincs_shake256_128s_robust_clean
+  PQCLEAN_SPHINCSSHAKE256128SROBUST_CLEAN "${SRC_CLEAN_SPHINCS_SHAKE256_128S_ROBUST}" "${INC_CLEAN_SPHINCS_SHAKE256_128S_ROBUST}")
+
+set(
+  SRC_CLEAN_SPHINCS_SHAKE256_192S_ROBUST
+  src/sign/sphincs/sphincs-shake256-192s-robust/clean/address.c
+  src/sign/sphincs/sphincs-shake256-192s-robust/clean/fors.c
+  src/sign/sphincs/sphincs-shake256-192s-robust/clean/hash_shake256.c
+  src/sign/sphincs/sphincs-shake256-192s-robust/clean/sign.c
+  src/sign/sphincs/sphincs-shake256-192s-robust/clean/thash_shake256_robust.c
+  src/sign/sphincs/sphincs-shake256-192s-robust/clean/utils.c
+  src/sign/sphincs/sphincs-shake256-192s-robust/clean/wots.c)
+set(
+  INC_CLEAN_SPHINCS_SHAKE256_192S_ROBUST
+  src/sign/sphincs/sphincs-shake256-192s-robust/clean)
+define_sig_alg(
+  sphincs_shake256_192s_robust_clean
+  PQCLEAN_SPHINCSSHAKE256192SROBUST_CLEAN "${SRC_CLEAN_SPHINCS_SHAKE256_192S_ROBUST}" "${INC_CLEAN_SPHINCS_SHAKE256_192S_ROBUST}")
+
+set(
+  SRC_CLEAN_SPHINCS_SHAKE256_256S_ROBUST
+  src/sign/sphincs/sphincs-shake256-256s-robust/clean/address.c
+  src/sign/sphincs/sphincs-shake256-256s-robust/clean/fors.c
+  src/sign/sphincs/sphincs-shake256-256s-robust/clean/hash_shake256.c
+  src/sign/sphincs/sphincs-shake256-256s-robust/clean/sign.c
+  src/sign/sphincs/sphincs-shake256-256s-robust/clean/thash_shake256_robust.c
+  src/sign/sphincs/sphincs-shake256-256s-robust/clean/utils.c
+  src/sign/sphincs/sphincs-shake256-256s-robust/clean/wots.c)
+set(
+  INC_CLEAN_SPHINCS_SHAKE256_256S_ROBUST
+  src/sign/sphincs/sphincs-shake256-256s-robust/clean)
+define_sig_alg(
+  sphincs_shake256_256s_robust_clean
+  PQCLEAN_SPHINCSSHAKE256256SROBUST_CLEAN "${SRC_CLEAN_SPHINCS_SHAKE256_256S_ROBUST}" "${INC_CLEAN_SPHINCS_SHAKE256_256S_ROBUST}")
+
+set(
+  SRC_CLEAN_SPHINCS_SHAKE256_128S_SIMPLE
+  src/sign/sphincs/sphincs-shake256-128s-simple/clean/address.c
+  src/sign/sphincs/sphincs-shake256-128s-simple/clean/fors.c
+  src/sign/sphincs/sphincs-shake256-128s-simple/clean/hash_shake256.c
+  src/sign/sphincs/sphincs-shake256-128s-simple/clean/sign.c
+  src/sign/sphincs/sphincs-shake256-128s-simple/clean/thash_shake256_simple.c
+  src/sign/sphincs/sphincs-shake256-128s-simple/clean/utils.c
+  src/sign/sphincs/sphincs-shake256-128s-simple/clean/wots.c)
+set(
+  INC_CLEAN_SPHINCS_SHAKE256_128S_SIMPLE
+  src/sign/sphincs/sphincs-shake256-128s-simple/clean)
+define_sig_alg(
+  sphincs_shake256_128s_simple_clean
+  PQCLEAN_SPHINCSSHAKE256128SSIMPLE_CLEAN "${SRC_CLEAN_SPHINCS_SHAKE256_128S_SIMPLE}" "${INC_CLEAN_SPHINCS_SHAKE256_128S_SIMPLE}")
+
+set(
+  SRC_CLEAN_SPHINCS_SHAKE256_192S_SIMPLE
+  src/sign/sphincs/sphincs-shake256-192s-simple/clean/address.c
+  src/sign/sphincs/sphincs-shake256-192s-simple/clean/fors.c
+  src/sign/sphincs/sphincs-shake256-192s-simple/clean/hash_shake256.c
+  src/sign/sphincs/sphincs-shake256-192s-simple/clean/sign.c
+  src/sign/sphincs/sphincs-shake256-192s-simple/clean/thash_shake256_simple.c
+  src/sign/sphincs/sphincs-shake256-192s-simple/clean/utils.c
+  src/sign/sphincs/sphincs-shake256-192s-simple/clean/wots.c)
+set(
+  INC_CLEAN_SPHINCS_SHAKE256_192S_SIMPLE
+  src/sign/sphincs/sphincs-shake256-192s-simple/clean)
+define_sig_alg(
+  sphincs_shake256_192s_simple_clean
+  PQCLEAN_SPHINCSSHAKE256192SSIMPLE_CLEAN "${SRC_CLEAN_SPHINCS_SHAKE256_192S_SIMPLE}" "${INC_CLEAN_SPHINCS_SHAKE256_192S_SIMPLE}")
+
+set(
+  SRC_CLEAN_SPHINCS_SHAKE256_256S_SIMPLE
+  src/sign/sphincs/sphincs-shake256-256s-simple/clean/address.c
+  src/sign/sphincs/sphincs-shake256-256s-simple/clean/fors.c
+  src/sign/sphincs/sphincs-shake256-256s-simple/clean/hash_shake256.c
+  src/sign/sphincs/sphincs-shake256-256s-simple/clean/sign.c
+  src/sign/sphincs/sphincs-shake256-256s-simple/clean/thash_shake256_simple.c
+  src/sign/sphincs/sphincs-shake256-256s-simple/clean/utils.c
+  src/sign/sphincs/sphincs-shake256-256s-simple/clean/wots.c)
+set(
+  INC_CLEAN_SPHINCS_SHAKE256_256S_SIMPLE
+  src/sign/sphincs/sphincs-shake256-256s-simple/clean)
+define_sig_alg(
+  sphincs_shake256_256s_simple_clean
+  PQCLEAN_SPHINCSSHAKE256256SSIMPLE_CLEAN "${SRC_CLEAN_SPHINCS_SHAKE256_256S_SIMPLE}" "${INC_CLEAN_SPHINCS_SHAKE256_256S_SIMPLE}")
+
 # AVX2 targets
 if(${ARCH} STREQUAL "ARCH_x86_64")
 
@@ -840,9 +1032,6 @@ set(
 define_sig_alg(
   falcon1024_avx2
   PQCLEAN_FALCON1024_AVX2 "${SRC_AVX2_FALCON1024}" "${INC_AVX2_FALCON1024}")
-
-
-
 
 set(
   SRC_AVX2_SPHINCS_SHA256_128S_SIMPLE
@@ -1109,7 +1298,245 @@ define_sig_alg(
   sphincs_sha256_256s_robust_avx2
   PQCLEAN_SPHINCSSHA256256SROBUST_AVX2 "${SRC_AVX2_SPHINCS_SHA256_256S_ROBUST}" "${INC_AVX2_SPHINCS_SHA256_256S_ROBUST}")
 
+set(
+  SRC_AVX2_SPHINCS_SHAKE256_128F_ROBUST
+  src/sign/sphincs/sphincs-shake256-128f-robust/avx2/address.c
+  src/sign/sphincs/sphincs-shake256-128f-robust/avx2/fors.c
+  src/sign/sphincs/sphincs-shake256-128f-robust/avx2/hash_shake256.c
+  src/sign/sphincs/sphincs-shake256-128f-robust/avx2/sign.c
+  src/sign/sphincs/sphincs-shake256-128f-robust/avx2/thash_shake256_robust.c
+  src/sign/sphincs/sphincs-shake256-128f-robust/avx2/utils.c
+  src/sign/sphincs/sphincs-shake256-128f-robust/avx2/wots.c
+  src/sign/sphincs/sphincs-shake256-128f-robust/avx2/fips202x4.c
+  src/sign/sphincs/sphincs-shake256-128f-robust/avx2/hash_shake256x4.c
+  src/sign/sphincs/sphincs-shake256-128f-robust/avx2/thash_shake256_robustx4.c
+  src/sign/sphincs/sphincs-shake256-128f-robust/avx2/utilsx4.c)
+set(
+  INC_AVX2_SPHINCS_SHAKE256_128F_ROBUST
+  src/sign/sphincs/sphincs-shake256-128f-robust/avx2)
+define_sig_alg(
+  sphincs_shake256_128f_robust_avx2
+  PQCLEAN_SPHINCSSHAKE256128FROBUST_AVX2 "${SRC_AVX2_SPHINCS_SHAKE256_128F_ROBUST}" "${INC_AVX2_SPHINCS_SHAKE256_128F_ROBUST}")
 
+set(
+  SRC_AVX2_SPHINCS_SHAKE256_192F_ROBUST
+  src/sign/sphincs/sphincs-shake256-192f-robust/avx2/address.c
+  src/sign/sphincs/sphincs-shake256-192f-robust/avx2/fors.c
+  src/sign/sphincs/sphincs-shake256-192f-robust/avx2/hash_shake256.c
+  src/sign/sphincs/sphincs-shake256-192f-robust/avx2/sign.c
+  src/sign/sphincs/sphincs-shake256-192f-robust/avx2/thash_shake256_robust.c
+  src/sign/sphincs/sphincs-shake256-192f-robust/avx2/utils.c
+  src/sign/sphincs/sphincs-shake256-192f-robust/avx2/wots.c
+  src/sign/sphincs/sphincs-shake256-192f-robust/avx2/fips202x4.c
+  src/sign/sphincs/sphincs-shake256-192f-robust/avx2/hash_shake256x4.c
+  src/sign/sphincs/sphincs-shake256-192f-robust/avx2/thash_shake256_robustx4.c
+  src/sign/sphincs/sphincs-shake256-192f-robust/avx2/utilsx4.c)
+set(
+  INC_AVX2_SPHINCS_SHAKE256_192F_ROBUST
+  src/sign/sphincs/sphincs-shake256-192f-robust/avx2)
+define_sig_alg(
+  sphincs_shake256_192f_robust_avx2
+  PQCLEAN_SPHINCSSHAKE256192FROBUST_AVX2 "${SRC_AVX2_SPHINCS_SHAKE256_192F_ROBUST}" "${INC_AVX2_SPHINCS_SHAKE256_192F_ROBUST}")
+
+set(
+  SRC_AVX2_SPHINCS_SHAKE256_256F_ROBUST
+  src/sign/sphincs/sphincs-shake256-256f-robust/avx2/address.c
+  src/sign/sphincs/sphincs-shake256-256f-robust/avx2/fors.c
+  src/sign/sphincs/sphincs-shake256-256f-robust/avx2/hash_shake256.c
+  src/sign/sphincs/sphincs-shake256-256f-robust/avx2/sign.c
+  src/sign/sphincs/sphincs-shake256-256f-robust/avx2/thash_shake256_robust.c
+  src/sign/sphincs/sphincs-shake256-256f-robust/avx2/utils.c
+  src/sign/sphincs/sphincs-shake256-256f-robust/avx2/wots.c
+  src/sign/sphincs/sphincs-shake256-256f-robust/avx2/fips202x4.c
+  src/sign/sphincs/sphincs-shake256-256f-robust/avx2/hash_shake256x4.c
+  src/sign/sphincs/sphincs-shake256-256f-robust/avx2/thash_shake256_robustx4.c
+  src/sign/sphincs/sphincs-shake256-256f-robust/avx2/utilsx4.c)
+set(
+  INC_AVX2_SPHINCS_SHAKE256_256F_ROBUST
+  src/sign/sphincs/sphincs-shake256-256f-robust/avx2)
+define_sig_alg(
+  sphincs_shake256_256f_robust_avx2
+  PQCLEAN_SPHINCSSHAKE256256FROBUST_AVX2 "${SRC_AVX2_SPHINCS_SHAKE256_256F_ROBUST}" "${INC_AVX2_SPHINCS_SHAKE256_256F_ROBUST}")
+
+set(
+  SRC_AVX2_SPHINCS_SHAKE256_128F_SIMPLE
+  src/sign/sphincs/sphincs-shake256-128f-simple/avx2/address.c
+  src/sign/sphincs/sphincs-shake256-128f-simple/avx2/fors.c
+  src/sign/sphincs/sphincs-shake256-128f-simple/avx2/hash_shake256.c
+  src/sign/sphincs/sphincs-shake256-128f-simple/avx2/sign.c
+  src/sign/sphincs/sphincs-shake256-128f-simple/avx2/thash_shake256_simple.c
+  src/sign/sphincs/sphincs-shake256-128f-simple/avx2/utils.c
+  src/sign/sphincs/sphincs-shake256-128f-simple/avx2/wots.c
+  src/sign/sphincs/sphincs-shake256-128f-simple/avx2/fips202x4.c
+  src/sign/sphincs/sphincs-shake256-128f-simple/avx2/hash_shake256x4.c
+  src/sign/sphincs/sphincs-shake256-128f-simple/avx2/thash_shake256_simplex4.c
+  src/sign/sphincs/sphincs-shake256-128f-simple/avx2/utilsx4.c)
+set(
+  INC_AVX2_SPHINCS_SHAKE256_128F_SIMPLE
+  src/sign/sphincs/sphincs-shake256-128f-simple/avx2)
+define_sig_alg(
+  sphincs_shake256_128f_simple_avx2
+  PQCLEAN_SPHINCSSHAKE256128FSIMPLE_AVX2 "${SRC_AVX2_SPHINCS_SHAKE256_128F_SIMPLE}" "${INC_AVX2_SPHINCS_SHAKE256_128F_SIMPLE}")
+
+set(
+  SRC_AVX2_SPHINCS_SHAKE256_192F_SIMPLE
+  src/sign/sphincs/sphincs-shake256-192f-simple/avx2/address.c
+  src/sign/sphincs/sphincs-shake256-192f-simple/avx2/fors.c
+  src/sign/sphincs/sphincs-shake256-192f-simple/avx2/hash_shake256.c
+  src/sign/sphincs/sphincs-shake256-192f-simple/avx2/sign.c
+  src/sign/sphincs/sphincs-shake256-192f-simple/avx2/thash_shake256_simple.c
+  src/sign/sphincs/sphincs-shake256-192f-simple/avx2/utils.c
+  src/sign/sphincs/sphincs-shake256-192f-simple/avx2/wots.c
+  src/sign/sphincs/sphincs-shake256-192f-simple/avx2/fips202x4.c
+  src/sign/sphincs/sphincs-shake256-192f-simple/avx2/hash_shake256x4.c
+  src/sign/sphincs/sphincs-shake256-192f-simple/avx2/thash_shake256_simplex4.c
+  src/sign/sphincs/sphincs-shake256-192f-simple/avx2/utilsx4.c)
+set(
+  INC_AVX2_SPHINCS_SHAKE256_192F_SIMPLE
+  src/sign/sphincs/sphincs-shake256-192f-simple/avx2)
+define_sig_alg(
+  sphincs_shake256_192f_simple_avx2
+  PQCLEAN_SPHINCSSHAKE256192FSIMPLE_AVX2 "${SRC_AVX2_SPHINCS_SHAKE256_192F_SIMPLE}" "${INC_AVX2_SPHINCS_SHAKE256_192F_SIMPLE}")
+
+set(
+  SRC_AVX2_SPHINCS_SHAKE256_256F_SIMPLE
+  src/sign/sphincs/sphincs-shake256-256f-simple/avx2/address.c
+  src/sign/sphincs/sphincs-shake256-256f-simple/avx2/fors.c
+  src/sign/sphincs/sphincs-shake256-256f-simple/avx2/hash_shake256.c
+  src/sign/sphincs/sphincs-shake256-256f-simple/avx2/sign.c
+  src/sign/sphincs/sphincs-shake256-256f-simple/avx2/thash_shake256_simple.c
+  src/sign/sphincs/sphincs-shake256-256f-simple/avx2/utils.c
+  src/sign/sphincs/sphincs-shake256-256f-simple/avx2/wots.c
+  src/sign/sphincs/sphincs-shake256-256f-simple/avx2/fips202x4.c
+  src/sign/sphincs/sphincs-shake256-256f-simple/avx2/hash_shake256x4.c
+  src/sign/sphincs/sphincs-shake256-256f-simple/avx2/thash_shake256_simplex4.c
+  src/sign/sphincs/sphincs-shake256-256f-simple/avx2/utilsx4.c)
+set(
+  INC_AVX2_SPHINCS_SHAKE256_256F_SIMPLE
+  src/sign/sphincs/sphincs-shake256-256f-simple/avx2)
+define_sig_alg(
+  sphincs_shake256_256f_simple_avx2
+  PQCLEAN_SPHINCSSHAKE256256FSIMPLE_AVX2 "${SRC_AVX2_SPHINCS_SHAKE256_256F_SIMPLE}" "${INC_AVX2_SPHINCS_SHAKE256_256F_SIMPLE}")
+
+set(
+  SRC_AVX2_SPHINCS_SHAKE256_128S_ROBUST
+  src/sign/sphincs/sphincs-shake256-128s-robust/avx2/address.c
+  src/sign/sphincs/sphincs-shake256-128s-robust/avx2/fors.c
+  src/sign/sphincs/sphincs-shake256-128s-robust/avx2/hash_shake256.c
+  src/sign/sphincs/sphincs-shake256-128s-robust/avx2/sign.c
+  src/sign/sphincs/sphincs-shake256-128s-robust/avx2/thash_shake256_robust.c
+  src/sign/sphincs/sphincs-shake256-128s-robust/avx2/utils.c
+  src/sign/sphincs/sphincs-shake256-128s-robust/avx2/wots.c
+  src/sign/sphincs/sphincs-shake256-128s-robust/avx2/fips202x4.c
+  src/sign/sphincs/sphincs-shake256-128s-robust/avx2/hash_shake256x4.c
+  src/sign/sphincs/sphincs-shake256-128s-robust/avx2/thash_shake256_robustx4.c
+  src/sign/sphincs/sphincs-shake256-128s-robust/avx2/utilsx4.c)
+set(
+  INC_AVX2_SPHINCS_SHAKE256_128S_ROBUST
+  src/sign/sphincs/sphincs-shake256-128s-robust/avx2)
+define_sig_alg(
+  sphincs_shake256_128s_robust_avx2
+  PQCLEAN_SPHINCSSHAKE256128SROBUST_AVX2 "${SRC_AVX2_SPHINCS_SHAKE256_128S_ROBUST}" "${INC_AVX2_SPHINCS_SHAKE256_128S_ROBUST}")
+
+set(
+  SRC_AVX2_SPHINCS_SHAKE256_192S_ROBUST
+  src/sign/sphincs/sphincs-shake256-192s-robust/avx2/address.c
+  src/sign/sphincs/sphincs-shake256-192s-robust/avx2/fors.c
+  src/sign/sphincs/sphincs-shake256-192s-robust/avx2/hash_shake256.c
+  src/sign/sphincs/sphincs-shake256-192s-robust/avx2/sign.c
+  src/sign/sphincs/sphincs-shake256-192s-robust/avx2/thash_shake256_robust.c
+  src/sign/sphincs/sphincs-shake256-192s-robust/avx2/utils.c
+  src/sign/sphincs/sphincs-shake256-192s-robust/avx2/wots.c
+  src/sign/sphincs/sphincs-shake256-192s-robust/avx2/fips202x4.c
+  src/sign/sphincs/sphincs-shake256-192s-robust/avx2/hash_shake256x4.c
+  src/sign/sphincs/sphincs-shake256-192s-robust/avx2/thash_shake256_robustx4.c
+  src/sign/sphincs/sphincs-shake256-192s-robust/avx2/utilsx4.c)
+set(
+  INC_AVX2_SPHINCS_SHAKE256_192S_ROBUST
+  src/sign/sphincs/sphincs-shake256-192s-robust/avx2)
+define_sig_alg(
+  sphincs_shake256_192s_robust_avx2
+  PQCLEAN_SPHINCSSHAKE256192SROBUST_AVX2 "${SRC_AVX2_SPHINCS_SHAKE256_192S_ROBUST}" "${INC_AVX2_SPHINCS_SHAKE256_192S_ROBUST}")
+
+set(
+  SRC_AVX2_SPHINCS_SHAKE256_256S_ROBUST
+  src/sign/sphincs/sphincs-shake256-256s-robust/avx2/address.c
+  src/sign/sphincs/sphincs-shake256-256s-robust/avx2/fors.c
+  src/sign/sphincs/sphincs-shake256-256s-robust/avx2/hash_shake256.c
+  src/sign/sphincs/sphincs-shake256-256s-robust/avx2/sign.c
+  src/sign/sphincs/sphincs-shake256-256s-robust/avx2/thash_shake256_robust.c
+  src/sign/sphincs/sphincs-shake256-256s-robust/avx2/utils.c
+  src/sign/sphincs/sphincs-shake256-256s-robust/avx2/wots.c
+  src/sign/sphincs/sphincs-shake256-256s-robust/avx2/fips202x4.c
+  src/sign/sphincs/sphincs-shake256-256s-robust/avx2/hash_shake256x4.c
+  src/sign/sphincs/sphincs-shake256-256s-robust/avx2/thash_shake256_robustx4.c
+  src/sign/sphincs/sphincs-shake256-256s-robust/avx2/utilsx4.c)
+set(
+  INC_AVX2_SPHINCS_SHAKE256_256S_ROBUST
+  src/sign/sphincs/sphincs-shake256-256s-robust/avx2)
+define_sig_alg(
+  sphincs_shake256_256s_robust_avx2
+  PQCLEAN_SPHINCSSHAKE256256SROBUST_AVX2 "${SRC_AVX2_SPHINCS_SHAKE256_256S_ROBUST}" "${INC_AVX2_SPHINCS_SHAKE256_256S_ROBUST}")
+
+set(
+  SRC_AVX2_SPHINCS_SHAKE256_128S_SIMPLE
+  src/sign/sphincs/sphincs-shake256-128s-simple/avx2/address.c
+  src/sign/sphincs/sphincs-shake256-128s-simple/avx2/fors.c
+  src/sign/sphincs/sphincs-shake256-128s-simple/avx2/hash_shake256.c
+  src/sign/sphincs/sphincs-shake256-128s-simple/avx2/sign.c
+  src/sign/sphincs/sphincs-shake256-128s-simple/avx2/thash_shake256_simple.c
+  src/sign/sphincs/sphincs-shake256-128s-simple/avx2/utils.c
+  src/sign/sphincs/sphincs-shake256-128s-simple/avx2/wots.c
+  src/sign/sphincs/sphincs-shake256-128s-simple/avx2/fips202x4.c
+  src/sign/sphincs/sphincs-shake256-128s-simple/avx2/hash_shake256x4.c
+  src/sign/sphincs/sphincs-shake256-128s-simple/avx2/thash_shake256_simplex4.c
+  src/sign/sphincs/sphincs-shake256-128s-simple/avx2/utilsx4.c)
+set(
+  INC_AVX2_SPHINCS_SHAKE256_128S_SIMPLE
+  src/sign/sphincs/sphincs-shake256-128s-simple/avx2)
+define_sig_alg(
+  sphincs_shake256_128s_simple_avx2
+  PQCLEAN_SPHINCSSHAKE256128SSIMPLE_AVX2 "${SRC_AVX2_SPHINCS_SHAKE256_128S_SIMPLE}" "${INC_AVX2_SPHINCS_SHAKE256_128S_SIMPLE}")
+
+set(
+  SRC_AVX2_SPHINCS_SHAKE256_192S_SIMPLE
+  src/sign/sphincs/sphincs-shake256-192s-simple/avx2/address.c
+  src/sign/sphincs/sphincs-shake256-192s-simple/avx2/fors.c
+  src/sign/sphincs/sphincs-shake256-192s-simple/avx2/hash_shake256.c
+  src/sign/sphincs/sphincs-shake256-192s-simple/avx2/sign.c
+  src/sign/sphincs/sphincs-shake256-192s-simple/avx2/thash_shake256_simple.c
+  src/sign/sphincs/sphincs-shake256-192s-simple/avx2/utils.c
+  src/sign/sphincs/sphincs-shake256-192s-simple/avx2/wots.c
+  src/sign/sphincs/sphincs-shake256-192s-simple/avx2/fips202x4.c
+  src/sign/sphincs/sphincs-shake256-192s-simple/avx2/hash_shake256x4.c
+  src/sign/sphincs/sphincs-shake256-192s-simple/avx2/thash_shake256_simplex4.c
+  src/sign/sphincs/sphincs-shake256-192s-simple/avx2/utilsx4.c)
+set(
+  INC_AVX2_SPHINCS_SHAKE256_192S_SIMPLE
+  src/sign/sphincs/sphincs-shake256-192s-simple/avx2)
+define_sig_alg(
+  sphincs_shake256_192s_simple_avx2
+  PQCLEAN_SPHINCSSHAKE256192SSIMPLE_AVX2 "${SRC_AVX2_SPHINCS_SHAKE256_192S_SIMPLE}" "${INC_AVX2_SPHINCS_SHAKE256_192S_SIMPLE}")
+
+set(
+  SRC_AVX2_SPHINCS_SHAKE256_256S_SIMPLE
+  src/sign/sphincs/sphincs-shake256-256s-simple/avx2/address.c
+  src/sign/sphincs/sphincs-shake256-256s-simple/avx2/fors.c
+  src/sign/sphincs/sphincs-shake256-256s-simple/avx2/hash_shake256.c
+  src/sign/sphincs/sphincs-shake256-256s-simple/avx2/sign.c
+  src/sign/sphincs/sphincs-shake256-256s-simple/avx2/thash_shake256_simple.c
+  src/sign/sphincs/sphincs-shake256-256s-simple/avx2/utils.c
+  src/sign/sphincs/sphincs-shake256-256s-simple/avx2/wots.c
+  src/sign/sphincs/sphincs-shake256-256s-simple/avx2/fips202x4.c
+  src/sign/sphincs/sphincs-shake256-256s-simple/avx2/hash_shake256x4.c
+  src/sign/sphincs/sphincs-shake256-256s-simple/avx2/thash_shake256_simplex4.c
+  src/sign/sphincs/sphincs-shake256-256s-simple/avx2/utilsx4.c)
+set(
+  INC_AVX2_SPHINCS_SHAKE256_256S_SIMPLE
+  src/sign/sphincs/sphincs-shake256-256s-simple/avx2)
+define_sig_alg(
+  sphincs_shake256_256s_simple_avx2
+  PQCLEAN_SPHINCSSHAKE256256SSIMPLE_AVX2 "${SRC_AVX2_SPHINCS_SHAKE256_256S_SIMPLE}" "${INC_AVX2_SPHINCS_SHAKE256_256S_SIMPLE}")
 if(${ARCH} STREQUAL "ARCH_x86_64")
 set(SRC_COMMON_AVX2
   src/common/keccak4x/KeccakP-1600-times4-SIMD256.c
