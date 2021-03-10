@@ -9,6 +9,8 @@ set(CMAKE_VERBOSE_MAKEFILE ON)
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "~/.cmake/Modules")
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "3rd/cmake-modules")
 set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_INTERPROCEDURAL_OPTIMIZATION ON)
+set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 
 string(TOLOWER "${CMAKE_BUILD_TYPE}" CMAKE_BUILD_TYPE_LOWER)
 
@@ -300,6 +302,14 @@ set(
 define_kem_alg(
   lightsaber_clean
   PQCLEAN_LIGHTSABER_CLEAN "${SRC_CLEAN_LIGHTSABER}" "${INC_CLEAN_LIGHTSABER}")
+
+#function(define_frodo_src path)
+#endif()
+# -rw-r--r-- 1 kris kris 13783 Mar  1 12:35 kem.c
+# -rw-r--r-- 1 kris kris  3343 Mar  1 12:35 matrix_shake.c
+# -rw-r--r-- 1 kris kris  1426 Mar  1 12:35 noise.c
+# -rw-r--r-- 1 kris kris  9202 Mar  1 12:35 util.c
+
 
 # AVX2 targets
 if(${ARCH} STREQUAL "ARCH_x86_64")
