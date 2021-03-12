@@ -66,20 +66,39 @@ int32_t PQCLEAN_DILITHIUM2_CLEAN_decompose(int32_t *a0, int32_t a) {
         *a0 = r;
     }
 
-    // CASE: r-r0 = q-1 => r1=0, r0 = r0-1
 
     // OLD
     a1  = (a + 127) >> 7;
     a1  = (a1 * 11275 + (1 << 23)) >> 24;
     a1 ^= ((43 - a1) >> 31) & a1;
 
-    // TODO: ten sam trick co w barrett
-    int32_t a2 = ((uint64_t)a-*a0)/(2*GAMMA2);
+    // CASE: r-r0 = q-1 => r1=0, r0 = r0-1
+    uint64_t a2 = (uint64_t)a - *a0;
+    if (a2 == (Q-1)) {
+        a2 = 0;
+        *a0--;
+    }
+
+    // divide (r-r0)/alpha
+    // int32_t a2 = ((uint64_t)a-*a0)/(2*GAMMA2);
+    if ( (a2 >= (2*GAMMA2))) {
+        a2 = (a2*u) >> 36;
+        // a2 is divisible by ALPHA=(2*GAMMA2) and hence
+        // it will always be off by one.
+        a2++;
+    }
+
+
+
+    //if (!a1) a2 = a1;
 
     //*a0  = a - a1 * 2 * GAMMA2;
     //*a0 -= (((Q - 1) / 2 - *a0) >> 31) & Q;
-    printf("(%d, %d,\n)", a1, a2);
-    return a1;
+    if (a1 != (int32_t)a2)
+        printf("OZAPTF: (A1=%d, A2=%d, A=%d R=%d)\n",
+            a1, (int32_t)a2, a, (a-(*a0)));
+//    printf("OZAPTF: %d %d %d\n", a, *a0, (a-*a0));
+    return a2;
 }
 
 /*************************************************
